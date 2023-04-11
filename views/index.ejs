@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Submit Form</title>
+    <link rel="stylesheet" href="views/style.css">
+    <style>
+   body {
+  font-family: sans-serif;
+  background-color: #f0f0f0;
+}
+
+table {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  width: 50%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  
+}
+
+table td, table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+table th {
+  background-color: #4CAF50;
+  color: #fff;
+  text-align: left;
+}
+
+input[type="text"] {
+  border: none;
+  border-radius: 3px;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button[type="submit"] {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+.result {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 20px;
+        font-weight: bold;
+        color: #4CAF50; /* Added color to match the button */
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <form id="submit-form" method="POST" action="/submit">
+        <h4>!!QUESTION 4!!</h4>
+      <table>
+        <tr>
+          <th>X:</th>
+          <td><input type="text" name="x" id="x" required></td>
+        </tr>
+        <tr>
+          <th>Y:</th>
+          <td><input type="text" name="y" id="y" required></td>
+        </tr>
+        <tr>
+          <th>Z:</th>
+          <td><input type="text" name="z" id="z" required></td>
+        </tr>
+      </table>
+      <button type="submit">Submit</button>
+    </form>
+    <div class="result">
+        <%= value %>
+      </div>
+  </body>
+</html>
